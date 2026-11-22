@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор стоимости услуги</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="my.js" defer></script>
+</head>
+<body>
+  <h1>Калькулятор стоимости услуги</h1>
+
+  <form id="calc-form">
+    <fieldset>
+      <legend>Тип услуги:</legend>
+      <label>
+        <input type="radio" name="serviceType" value="1" checked>
+        Ч/б печать (10 руб./шт)
+      </label>
+      <label>
+        <input type="radio" name="serviceType" value="2">
+        Цветная печать (25 руб./шт)
+      </label>
+      <label>
+        <input type="radio" name="serviceType" value="3">
+        Фотопечать (40 руб./шт)
+      </label>
+    </fieldset>
+
+    <p id="options-block">
+      <label for="optionSelect">Опция:</label>
+      <select id="optionSelect" name="optionSelect"></select>
+    </p>
+
+    <p id="property-block">
+      <label>
+        <input type="checkbox" id="propertyCheck" name="propertyCheck">
+        <span id="propertyLabel">Свойство</span>
+      </label>
+    </p>
+
+    <p>
+      <label for="quantity">Количество:</label>
+      <input type="text" id="quantity" name="quantity" value="1">
+    </p>
+
+    <p id="total">Стоимость: 0 руб.</p>
+    <p id="error" class="error"></p>
+  </form>
+</body>
+</html>

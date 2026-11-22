@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  margin: auto;
+  max-width: 720px;
+  padding: 16px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  margin-bottom: 12px;
+}
+
+fieldset label {
+  display: block;
+  margin: 4px 0;
+}
+
+#options-block,
+#property-block {
+  margin: 12px 0;
+}
+
+#total {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #1a6b1a;
+}
+
+.error {
+  color: #b00020;
+  min-height: 1.2em;
+}
